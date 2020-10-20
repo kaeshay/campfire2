@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Campfire 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="containment-wrapper">
+		<img style="position:absolute; width:2000px" src="assets/dirar/rollercoaster.png">
+
+		<img style="top:1500px" class="building" src="assets/teddy/tracks.png">
+		<img style="top:1500px; left:300px" class="building" src="assets/teddy/tracks.png">
+		<img style="top:1500px; left:600px" class="building" src="assets/teddy/tracks.png">
+		<img style="top:1500px; left:900px" class="building" src="assets/teddy/tracks.png">
+		<img style="top:1500px; left:1200px" class="building" src="assets/teddy/tracks.png">
+		<img style="top:1500px; left:1500px" class="building" src="assets/teddy/tracks.png">
+		<img style="top:1500px; left:1800px" class="building" src="assets/teddy/tracks.png">
+		<img style="top:1600px" class="draggable ocean" src="assets/teddy/ocean.png">
+		<img style="top:1600px;left:600px" class="draggable ocean" src="assets/teddy/ocean.png">
+		<img style="top:1600px;left:1200px" class="draggable ocean" src="assets/teddy/ocean.png">
+
+
+		<!-- 10-6-2020 -->
+		<img id="draggable" class="building" src="assets/dirar/donut.png">
+		<img id="draggable" class="vehicle" src="assets/dirar/nail-clipper.png">
+		<img id="draggable" class="item" src="assets/dirar/oreo.png">
+		<img id="draggable" class="avatar" src="assets/dirar/power-ranger.png">
+		<a href="file:///Users/kayliang/Desktop/campfire/index.html">
+		<img id="draggable" class="building" src="assets/kay/house.png"></a>
+		<img id="draggable" class="building" src="assets/kay/pool.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/1.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/2.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/3.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/4.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/5.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/6.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/7.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/8.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/9.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/10.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/11.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/12.png">
+		<img id="draggable" class="avatar" src="assets/obstacles/13.png">
+		<img id="draggable" class="avatar" src="assets/kay/hipstuh.png">
+		<img id="draggable" class="avatar" src="assets/kay/sporty-boy.png">
+		<img id="draggable" class="avatar" src="assets/rui/waterbottle1.png">
+		<img id="draggable" class="vehicle" src="assets/rui/nail-clipper-robber.png">
+		<img id="draggable" class="avatar" src="assets/rui/car-dealer.png">
+		<img id="draggable" class="avatar" src="assets/dirar/power-ranger2.png">
+		<img id="draggable" class="avatar" src="assets/rui/waterbottle2.png">
+		<img id="draggable" class="avatar" src="assets/dirar/waterbottle1.png">
+
+		<!-- 10-7-2020 -->
+		<img id="draggable" class="building" src="assets/dirar/monkey-bar.png">
+		<div id="monster-mom" style="position:absolute" ondblclick="addHat()">
+		<img id="draggable" class="vehicle" src="assets/kay/monster-mom.png"></div>
+
+		<div id="monster-teen" style="position:absolute" ondblclick="addBackpack()">
+			<a href="pages/backpack.html">
+			<img id="draggable" class="vehicle" src="assets/kay/monster-teen-backpack.png"></a>
+		</div>
+	
+		<img id="draggable" class="avatar" src="assets/dirar/waterbottle1.png">
+		<img id="draggable" class="avatar" src="assets/aristotle/boulder.png">
+
+		<!-- 10-8-2020 -->
+		<a href="pages/greenhouse.html">
+		<img id="draggable" class="building" src="assets/kay/greenhouse.png"></a>
+
+		<!-- 10-9-2020 -->
+		<img id="draggable" class="avatar" src="assets/rui/owl.png">
+		<img id="draggable" class="avatar" src="assets/dirar/power-ranger3.png">
+
+		<!-- 10-12-2020 -->
+		<img id="draggable" class="vehicle" src="assets/kay/fire.gif">
+		<img id="draggable" class="avatar" src="assets/kay/shoeStore/benjamin.png">
+		<img id="draggable" class="item" src="assets/kay/shoeStore/shoe1a.png">
+		<img id="draggable" class="item" src="assets/kay/shoeStore/shoe1b.png">
+		<img id="draggable" class="item" src="assets/kay/shoeStore/shoe2a.png">
+		<img id="draggable" class="item" src="assets/kay/shoeStore/shoe2b.png">
+		<img id="draggable" class="item" src="assets/kay/shoeStore/shoe3a.png">
+		<img id="draggable" class="item" src="assets/kay/shoeStore/shoe3b.png">
+
+		<!-- 10-13-2020 -->
+		<div id="susan" style="position:absolute" ondblclick="addBalloon()">
+			<img id="draggable" class="avatar" src="assets/rui/susan.png">
+		</div>
+
+		<!-- 10-14-2020 -->
+		<div id="tofu" style="position:absolute" ondblclick="destroyTofu()">
+			<img id="draggable" class="avatar" style="width:400px" src="assets/maria/tofu.png">
+		</div>
+		<img id="draggable" class="avatar" src="assets/rui/hypnotic-monster.png">
+		<img id="draggable" class="building" src="assets/aristotle/train1.png">
+		<img id="draggable" class="building" src="assets/aristotle/train2.png">
+
+		<!-- 10-15-2020 -->
+		<img id="draggable" class="vehicle" src="assets/aziz/tissue-box.png">
+		<img id="draggable" class="vehicle" src="assets/aziz/star-wars-watch.png">
+		<img id="draggable" style="width:800px" class="building" src="assets/aziz/bear.png">
+		<img id="draggable" class="vehicle" src="assets/aziz/dinosaur-octopus.png">
+		<img id="draggable" class="avatar" src="assets/dirar/dirar.png">
+		<img id="draggable" class="vehicle" src="assets/teddy/shark.png">
+		<img id="draggable" class="vehicle" src="assets/teddy/dinosaur-piggy-back.png">
+		<img id="draggable" class="vehicle" src="assets/teddy/lego-car.png">
+
+		<!-- 10-16-2020 -->
+		<div id="grandpa" style="position:absolute" ondblclick="addGrandpa()">
+		<img id="draggable" class="avatar" src="assets/kay/grandpa.png"></div>
+	</div>
+</body>
+<script type="text/javascript" src="scripts/draggable.js"></script>
+<script type="text/javascript" src="scripts/toggle.js"></script>
+<script type="text/javascript" src="scripts/steal.js"></script>
+</html>

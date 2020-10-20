@@ -1,0 +1,32 @@
+#containment-wrapper{
+  width: 5000px;
+  height:2000px;
+  border:2px solid #ccc;
+  padding: 10px;
+}
+/*#draggable{
+  position:absolute;
+}*/
+.draggable{
+  position:absolute;
+}
+.item{
+  width:50px;
+  position:absolute;
+}
+.avatar{
+	width:70px;
+  position:absolute;
+}
+.vehicle{
+	width:120px;
+  position:absolute;
+}
+.building{
+	width:300px;
+  position:absolute;
+}
+.ocean{
+  width:700px;
+  position:absolute;
+}
