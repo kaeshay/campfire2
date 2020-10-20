@@ -36,11 +36,11 @@ tofuCounter=0;
 function destroyTofu(){
 	element=document.getElementById("tofu").getElementsByTagName('img')[0];
 	if(tofuCounter==0){
-		element.src="assets/maria/tofudestroy.png";
+		element.src="assets/maria/tofudestroy.PNG";
 		element.style.width="1000px";
 		tofuCounter++;
 	} else if(tofuCounter==1){
-		element.src="assets/maria/tofuhappy.png";
+		element.src="assets/maria/tofuhappy.PNG";
 		element.style.width="400px";
 		tofuCounter=0;
 	}
