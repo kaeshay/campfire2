@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Theater</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<style>
+		.prop{
+			position:absolute;
+			top:600px;
+		}
+		#videoPlayer{
+			position:absolute;
+			top:130px;
+			left:100px;
+			height:500px;
+			margin:auto;
+		}
+		#videoPlayer_wrapper{
+		/*	position:;*/
+		}
+		#nextButton{
+			position:absolute;
+			top:600px;
+			left:550px;
+			height:20px;
+		}
+	</style>
+</head>
+<body>	
+	<div id="videoPlayer_wrapper">
+		<video id="videoPlayer"controls autoplay>
+		 	<source src="../assets/movies/dirar1.mp4" type="video/mp4"> 
+        </video>
+	</div>
+	<img class="draggable prop" style="width:700px" src="../assets/kay/castle.png">
+	<img class="draggable prop" style="width:600px" src="../assets/kay/princess.png">
+
+	<img class="draggable" style="width:1000px" src="../assets/kay/theater-screen.png">
+
+	<button id="nextButton" type="button" onclick="nextVideo()"> > </button>
+
+</body>
+<script type="text/javascript" src="../scripts/draggable.js"></script>
+<script>
+	var counter = 0;
+	function nextVideo(){
+		element=document.getElementById('videoPlayer');
+		if (counter==0){
+			element.src="../assets/movies/rui1.mp4";
+			counter++;
+		} else if (counter==1){
+			element.src="../assets/movies/rui2.mp4";
+			counter++;
+		} else if (counter==2){
+			element.src="../assets/movies/rui3.mp4";
+			counter++;
+		} else if (counter==3){
+			element.src="../assets/movies/rui4.mp4";
+			counter++;
+		} else if (counter==4){
+			element.src="../assets/movies/rui5.mp4";
+			counter++;
+		} else if (counter==5){
+			element.src="../assets/movies/dirar1.mp4";
+			counter=0;
+		}
+	}
+</script>
+<!-- <script>
+	$('#videoPlayer').on('mousedown', function (e) {
+
+    var wrapper = $('#videoPlayer_wrapper'),      // calc relative mouse pos
+        rect = wrapper[0].getBoundingClientRect(),
+        y = e.clientY - rect.top;
+
+    if (y > $('#videoPlayer')[0].height - 40) {   // if in ctrl zone disable drag
+        wrapper.draggable('disable');
+    }
+	});
+
+	$('#videoPlayer').on('mouseup', function (e) {
+    $('#videoPlayer_wrapper').draggable('enable'); // always enable
+	});
+</script> -->
+</html>

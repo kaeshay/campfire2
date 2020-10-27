@@ -56,3 +56,25 @@ function addGrandpa(){
 		grandpaCounter=0;
 	}
 }
+jimmyCounter=0;
+function addMask(){
+	element=document.getElementById("jimmy").getElementsByTagName('img')[0];
+	if(jimmyCounter==0){
+		element.src="assets/rui/jimmy-mask.png";
+		jimmyCounter++;
+	} else if(jimmyCounter==1){
+		element.src="assets/rui/jimmy.png";
+		jimmyCounter=0;
+	}
+}
+lauraCounter=0;
+function sadLaura(){
+	element=document.getElementById("laura").getElementsByTagName('img')[0];
+	if(lauraCounter==0){
+		element.src="assets/kay/laura-sad.png";
+		lauraCounter++;
+	} else if(lauraCounter==1){
+		element.src="assets/kay/laura.png";
+		lauraCounter=0;
+	}
+}

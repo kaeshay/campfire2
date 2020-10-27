@@ -1,6 +1,6 @@
 #containment-wrapper{
   width: 5000px;
-  height:2000px;
+  height:7000px;
   border:2px solid #ccc;
   padding: 10px;
 }
@@ -26,6 +26,10 @@
 	width:300px;
   position:absolute;
 }
+.obstacle{
+  width:500px;
+  position:absolute;
+}
 .ocean{
   width:700px;
   position:absolute;
@@ -33,4 +37,11 @@
 .vertical{
   transform-origin: left;
     transform: translate(50%, 50%) rotate(90deg);
+}
+#underground{
+  position:absolute;
+  width:2000px;
+  height:1000px;
+  top:4800px;
+  background-color:#423229;
 }
