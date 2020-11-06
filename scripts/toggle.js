@@ -56,6 +56,17 @@ function addGrandpa(){
 		grandpaCounter=0;
 	}
 }
+grandpaColorCounter=0;
+function addGrandpaColor(){
+	element=document.getElementById("grandpa-color").getElementsByTagName('img')[0];
+	if(grandpaColorCounter==0){
+		element.src="assets/kay/grandpa-loud-color.png";
+		grandpaColorCounter++;
+	} else if(grandpaColorCounter==1){
+		element.src="assets/kay/grandpa-color.png";
+		grandpaColorCounter=0;
+	}
+}
 jimmyCounter=0;
 function addMask(){
 	element=document.getElementById("jimmy").getElementsByTagName('img')[0];
