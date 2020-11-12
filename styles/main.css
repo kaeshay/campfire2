@@ -1,17 +1,10 @@
 #containment-wrapper{
-  width: 5000px;
+  width: 6000px;
   height:7000px;
   border:2px solid #ccc;
   padding: 10px;
 }
-#outerspace{
-  background-color:#000000;
-  border:2px solid;
-  width:5000px;
-  height:2000px;
-  background-image: url('../assets/kay/stars.jpg');
-  background-repeat: repeat;
-}
+
 /*#draggable{
   position:absolute;
 }*/
@@ -45,27 +38,4 @@
 .vertical{
   transform-origin: left;
     transform: translate(50%, 50%) rotate(90deg);
-}
-#underground{
-  position:absolute;
-  width:2000px;
-  height:1000px;
-  top:4800px;
-  background-color:#423229;
-}
-#underground2{
-  position:absolute;
-  width:2000px;
-  height:1000px;
-  top:4800px;
-  left:2000px;
-  background-color:#423229;
-}
-#underground3{
-  position:absolute;
-  width:2000px;
-  height:1000px;
-  top:4800px;
-  left:4000px;
-  background-color:#423229;
 }

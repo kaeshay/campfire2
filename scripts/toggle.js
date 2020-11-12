@@ -89,3 +89,29 @@ function sadLaura(){
 		lauraCounter=0;
 	}
 }
+var jacksonCounter=0;
+function addJackson(){
+	element=document.getElementById("jackson").getElementsByTagName('img')[0];
+	if(jacksonCounter==0){
+		element.src="assets/kay/jackson-mouth.png";
+		jacksonCounter++;
+	} else if(jacksonCounter==1){
+		element.src="assets/kay/jackson.png";
+		jacksonCounter=0;
+	}
+}
+var dayCounter;
+function nightTime(){
+	backgroundContainer=document.getElementById('containment-wrapper');
+	sun=document.getElementById('sun')
+	if(dayCounter == 0){
+		backgroundContainer.style.backgroundColor='black';
+		sun.src="assets/kay/moon.gif";
+		dayCounter++;
+	}
+	else{
+		backgroundContainer.style.backgroundColor='white';
+		sun.src="assets/kay/sun.png";	
+		dayCounter = 0;
+	}
+}
