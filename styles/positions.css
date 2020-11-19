@@ -6,6 +6,14 @@
   background-image: url('../assets/kay/stars.jpg');
   background-repeat: repeat;
 }
+#road{
+  background-color:#A0A0A0;
+  position:absolute;
+  top:3800px;
+  border:2px solid;
+  width:6000px;
+  height:500px;
+}
 #skyBelt{
 	height:600px;	
 	width:6000px;
@@ -33,4 +41,42 @@
   top:4800px;
   left:4000px;
   background-color:#423229;
+}
+#emergencyButton{
+  position:fixed;
+  width:3%;
+  right:10px;
+  bottom:10px;
+}
+#emergencyCover{
+  position:fixed;
+  display:none;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:rgba(255,0,0,0.5);
+}
+#turnButton{
+  position:fixed;
+  width:3%;
+  bottom:10px;
+  left:10px;
+}
+#joshuaMountain{
+  position:absolute;
+  left:1000px;
+  top:1900px;
+}
+#azizMountain{
+  position:absolute;
+  left:1600px;
+  top:1000px;
+  height:1500px;
+}
+#georgie{
+  position:absolute;
+  width:2000px;
+  left:2000px;
+  top:100px;
 }

@@ -100,6 +100,19 @@ function addJackson(){
 		jacksonCounter=0;
 	}
 }
+var bookCounter=0;
+function openBook(){
+	element=document.getElementById("spellbook").getElementsByTagName('img')[0];
+	if(bookCounter==0){
+		element.src="assets/rui/spellbook-open.png";
+		element.style.width="120px";
+		bookCounter++;
+	} else if(bookCounter==1){
+		element.src="assets/rui/spellbook.png";
+		element.style.width="70px";
+		bookCounter=0;
+	}
+}
 var dayCounter;
 function nightTime(){
 	backgroundContainer=document.getElementById('containment-wrapper');
@@ -113,5 +126,48 @@ function nightTime(){
 		backgroundContainer.style.backgroundColor='white';
 		sun.src="assets/kay/sun.png";	
 		dayCounter = 0;
+	}
+}
+var green1Counter=0;
+function turnGreen(){
+	element=document.getElementsByClassName("hypnotic-monster2")[0];
+	if(green1Counter==0){
+		element.src="assets/rui/hypnotic-monster2.png";
+		green1Counter++;
+	} else if(green1Counter==1){
+		element.src="assets/rui/hypnotic-monster2-green.png";
+		green1Counter=0;
+	}
+}
+var emergencyCounter=0;
+function emergencyOn(){
+	element=document.getElementById("emergencyCover");
+	if(emergencyCounter==0){
+		element.style.display="block";
+		emergencyCounter++;
+	} else if(emergencyCounter==1){
+		element.style.display="none";
+		emergencyCounter=0;
+	}
+}
+
+var turnCounter=0;
+function turnSwitch(){
+	element=document.getElementById("turnButton");
+	if(turnCounter==0){
+		element.src="assets/icons/rui.png";
+		turnCounter++;
+	} else if(turnCounter==1){
+		element.src="assets/icons/dirar.png";
+		turnCounter++;
+	} else if(turnCounter==2){
+		element.src="assets/icons/aziz.png";
+		turnCounter++;
+	} else if(turnCounter==3){
+		element.src="assets/icons/aristotle.png";
+		turnCounter++;
+	} else if(turnCounter==4){
+		element.src="assets/icons/default.png";
+		turnCounter=0;
 	}
 }

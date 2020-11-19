@@ -14,6 +14,8 @@
 
 		<div id="outerspace" style="">
 		</div>
+		<div id="road" style="">
+		</div>
 		<div id="skyBelt"></div>
 
 		<img style="top:4000px" class="building" src="assets/teddy/tracks.png">
@@ -48,7 +50,9 @@
 			<img style="width:2100px;position:absolute;top:220px" src="assets/kay/track2.png">
 			<img style="width:2100px;position:absolute;top:500px" src="assets/kay/track3.png">
 		</div>
-
+		<img id="joshuaMountain" class="ocean" src="assets/joshua/mountain.png">
+		<img id="azizMountain" class="draggable" src="assets/aziz/mountain.png">
+		<img id="georgie" class="draggable" src="assets/aziz/bear.png">
 
 		<!-- 10-6-2020 -->
 		<img id="draggable" class="building" src="assets/dirar/donut.png">
@@ -127,7 +131,7 @@
 		<!-- 10-15-2020 -->
 		<img id="draggable" class="vehicle" src="assets/aziz/tissue-box.png">
 		<img id="draggable" class="vehicle" src="assets/aziz/star-wars-watch.png">
-		<img id="draggable" style="width:2000px" class="building" src="assets/aziz/bear.png">
+		<img id="draggable" style="width:2000px;display:none" class="building" src="assets/aziz/bear.png">
 		<img id="draggable" class="vehicle" src="assets/aziz/dinosaur-octopus.png">
 		<img id="draggable" class="avatar" src="assets/dirar/dirar.png">
 		<img id="draggable" class="vehicle" src="assets/teddy/shark.png">
@@ -145,7 +149,8 @@
 		<img id="draggable" class="avatar" src="assets/rui/mounie.png">
 		<img id="draggable" class="building" src="assets/aristotle/gordon1.png">
 		<img id="draggable" class="building" src="assets/aristotle/gordon2.png">
-		<img id="draggable" class="avatar" src="assets/rui/spell-book.png">
+		<div id="spellbook" style="position:absolute" ondblclick="openBook()">
+			<img id="draggable" class="avatar" src="assets/rui/spellbook.png"></div>
 		<img id="draggable" class="avatar" src="assets/rui/sunglasses.png">
 
 		<!-- 10-22-2020 -->
@@ -256,8 +261,58 @@
 		<img id="draggable" class="avatar" src="assets/kay/jackson.png" ondblclick="addJackson()"></div>
 		<img id="draggable" class="avatar" src="assets/kay/mouthguard.png">
 		<img id="draggable" class="item" src="assets/kay/mouthguard.png">
+		<img id="draggable" class="spell-monster avatar" src="assets/rui/spell-monster.png" ondblclick="turnGreen('spell-monster')">
 		<img id="draggable" class="avatar" src="assets/rui/spell-monster.png">
-		<img id="draggable" class="avatar" src="assets/rui/hypnotic-monster2.png">
+		<img id="draggable" class="hypnotic-monster2 avatar" src="assets/rui/hypnotic-monster2-green.png" ondblclick="turnGreen('hypnotic-monster2')">
+
+		<!-- 11-13-2020 -->
+		<img id="draggable" class="avatar" src="assets/rui/loom.png">
+		<img id="draggable" class="avatar" src="assets/dirar/annies.png">
+		<img id="draggable" class="building" src="assets/kay/big-ranger.png">
+		<img id="draggable" class="ocean" src="assets/kay/spin-wheel.png">
+		<img id="draggable" class="item" src="assets/kay/fly.png">
+		<img id="draggable" class="item" src="assets/kay/fly1.png">
+		<img id="draggable" class="item" src="assets/kay/fly2.png">
+		<img id="draggable" class="item" src="assets/kay/fly3.png">
+		<img id="draggable" class="ocean" style="width:1500px" src="assets/aristotle/long-island.png">
+		<img id="draggable" class="ocean" src="assets/aristotle/train-squiggly.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/monster-truck.png">
+		<img id="draggable" class="building" src="assets/aristotle/orange-train.png">
+		<img id="draggable" class="ocean" src="assets/aristotle/train-red-blue.png">
+		<img id="draggable" class="ocean" src="assets/kay/train-station.png">
+
+		<!-- 11-16-2020 -->
+		<img id="draggable" class="vehicle" src="assets/rui/big-power-ranger.png">
+		<img id="draggable" class="avatar" src="assets/rui/waterbottle-blob.png">
+
+
+		<!-- 11-17-2020 -->
+		<img id="draggable" class="avatar" src="assets/aziz/frog.png">
+		<img id="draggable" class="vehicle" src="assets/kay/crayon-crawler.png">
+		<img id="draggable" class="avatar" src="assets/dirar/bop-it.png">
+		<img id="draggable" style="width:50px" class="avatar" src="assets/kay/flower.gif">
+
+		<!-- 11-18-2020 -->
+		<img id="draggable" class="vehicle" src="assets/dirar/sour-punk.png">
+		<img id="draggable" class="vehicle" src="assets/rui/beautiful-dragon.png">
+
+		<!-- 11-19-2020 -->
+		<img id="draggable" class="building" src="assets/aziz/dinosaur1.png">
+		<img id="draggable" class="building" src="assets/aziz/dinosaur2.png">
+		<img id="draggable" class="building" src="assets/aziz/dinosaur3.png">
+		<img id="draggable" class="vehicle" src="assets/aziz/frog2.png">
+		<img id="draggable" class="vehicle" src="assets/rui/red-ranger.png">
+		<img id="draggable" class="vehicle" src="assets/aziz/pumpkin.png">
+		<img id="draggable" class="avatar" src="assets/dirar/honey-waffle.png">
+
+
+
+
+
+		<div id="emergencyCover">
+		</div>
+		<img id="emergencyButton" ondblclick="emergencyOn()"class="vehicle" src="assets/kay/emergency-button.png">
+		<img id="turnButton" onclick="turnSwitch()"class="vehicle" src="assets/icons/default.png">
 </body>
 <script type="text/javascript" src="scripts/draggable.js"></script>
 <script type="text/javascript" src="scripts/toggle.js"></script>
