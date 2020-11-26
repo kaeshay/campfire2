@@ -58,7 +58,7 @@
 		<img id="draggable" class="building" src="assets/dirar/donut.png">
 		<img id="draggable" class="vehicle" src="assets/dirar/nail-clipper.png">
 		<img id="draggable" class="item" src="assets/dirar/oreo.png">
-		<img id="draggable" class="avatar" src="assets/dirar/power-ranger.png">
+		<img id="draggable" class="gone avatar" src="assets/dirar/power-ranger.png">
 		<a href="file:///Users/kayliang/Desktop/campfire/index.html">
 		<img id="draggable" class="building" src="assets/kay/house.png"></a>
 		<img id="draggable" class="building" src="assets/kay/pool.png">
@@ -80,7 +80,7 @@
 		<img id="draggable" class="avatar" src="assets/rui/waterbottle1.png">
 		<img id="draggable" class="vehicle" src="assets/rui/nail-clipper-robber.png">
 		<img id="draggable" class="avatar" src="assets/rui/car-dealer.png">
-		<img id="draggable" class="avatar" src="assets/dirar/power-ranger2.png">
+		<img id="draggable" class="gone avatar" src="assets/dirar/power-ranger2.png">
 		<img id="draggable" class="avatar" src="assets/rui/waterbottle2.png">
 		<img id="draggable" class="avatar" src="assets/dirar/waterbottle1.png">
 
@@ -103,7 +103,7 @@
 
 		<!-- 10-9-2020 -->
 		<img id="draggable" class="avatar" src="assets/rui/owl.png">
-		<img id="draggable" class="avatar" src="assets/dirar/power-ranger3.png">
+		<img id="draggable" class="gone avatar" src="assets/dirar/power-ranger3.png">
 
 		<!-- 10-12-2020 -->
 		<img id="draggable" class="vehicle" src="assets/kay/fire.gif">
@@ -209,8 +209,8 @@
 		<!-- 11-2-2020 -->
 		<a href="pages/salmonLadder.html">
 		<img id="draggable" class="building" src="assets/kay/salmon-ladder.png"></a>
-		<img id="draggable" style="width:240px" class="building" src="assets/dirar/salmon-ladder-ranger.png">
-		<img id="draggable" style="width:240px" class="building" src="assets/dirar/salmon-ladder-ranger2.png">
+		<img id="draggable" style="width:240px" class="gone building" src="assets/dirar/salmon-ladder-ranger.png">
+		<img id="draggable" style="width:240px" class="gone building" src="assets/dirar/salmon-ladder-ranger2.png">
 		<img id="draggable" style="width:240px" class="building" src="assets/dirar/salmon-ladder-ranger3.png">
 		<div id="grandpa-color" style="position:absolute" ondblclick="addGrandpaColor()">
 		<img id="draggable" class="avatar" src="assets/kay/grandpa-color.png"></div>
@@ -261,14 +261,13 @@
 		<img id="draggable" class="avatar" src="assets/kay/jackson.png" ondblclick="addJackson()"></div>
 		<img id="draggable" class="avatar" src="assets/kay/mouthguard.png">
 		<img id="draggable" class="item" src="assets/kay/mouthguard.png">
-		<img id="draggable" class="spell-monster avatar" src="assets/rui/spell-monster.png" ondblclick="turnGreen('spell-monster')">
-		<img id="draggable" class="avatar" src="assets/rui/spell-monster.png">
-		<img id="draggable" class="hypnotic-monster2 avatar" src="assets/rui/hypnotic-monster2-green.png" ondblclick="turnGreen('hypnotic-monster2')">
+		<img id="draggable" class="spell-monster avatar" src="assets/rui/spell-monster.png" ondblclick="turnGreen('rui', 'spell-monster')">
+		<img id="draggable" class="hypnotic-monster2 avatar" src="assets/rui/hypnotic-monster2-green.png" ondblclick="turnGreen('rui', 'hypnotic-monster2')">
 
 		<!-- 11-13-2020 -->
 		<img id="draggable" class="avatar" src="assets/rui/loom.png">
 		<img id="draggable" class="avatar" src="assets/dirar/annies.png">
-		<img id="draggable" class="building" src="assets/kay/big-ranger.png">
+		<img id="draggable" class="gone big-ranger building" ondblclick="shrinkRanger()" src="assets/kay/big-ranger.png">
 		<img id="draggable" class="ocean" src="assets/kay/spin-wheel.png">
 		<img id="draggable" class="item" src="assets/kay/fly.png">
 		<img id="draggable" class="item" src="assets/kay/fly1.png">
@@ -305,14 +304,52 @@
 		<img id="draggable" class="vehicle" src="assets/aziz/pumpkin.png">
 		<img id="draggable" class="avatar" src="assets/dirar/honey-waffle.png">
 
+		<!-- 11-20-2020 -->
+		<img id="draggable" class="vehicle" src="assets/rui/dino-puppet.png">
+		<img id="draggable" class="firetruck vehicle" ondblclick="transform('kay','firetruck')" src="assets/kay/firetruck.png">
+	
+		<!-- 11-23-2020 -->
+		<img id="draggable" class="building" src="assets/rui/big-robot.png">
+		<img id="closet" class="draggable building" ondblclick="openCloset()" src="assets/kay/closet/closet1.png">
+		<div id="clothes">
+			<img class="draggable clothes-medium" src="assets/kay/closet/wig1.png">
+			<img class="draggable clothes-medium" src="assets/kay/closet/hat1.png">
+			<img class="draggable clothes-medium" src="assets/kay/closet/hat2.png">
+			<img class="draggable clothes-medium" src="assets/kay/closet/hat3.png">
+			<img class="draggable clothes-medium" src="assets/kay/closet/glasses1.png">
+			<img class="draggable clothes-small" src="assets/kay/closet/glasses1.png">
+			<img class="draggable clothes-medium" src="assets/kay/closet/belt.png">
+			<img class="draggable clothes-big" style="position:absolute;top:0px;left:0px" src="assets/kay/closet/coat1.png">
+			<img class="draggable clothes-medium" src="assets/kay/closet/mustache.png">
+			<img class="draggable clothes-medium" src="assets/kay/closet/skirt1.png">
+			<img class="draggable clothes-medium" src="assets/kay/closet/glasses2.png">
+			<img class="draggable clothes-medium" src="assets/kay/closet/glasses3.png">
+		</div>
+		<!-- 11-24-2020 -->
+		<img id="draggable" class="avatar" src="assets/kay/astronaut.png">
+		<img id="draggable" class="kayRocket vehicle" src="assets/kay/rocket.png" ondblclick="rocketLaunch()">
+		<img id="draggable" class="vehicle" src="assets/teddy/orange-dinosaur.png">
+		<img id="draggable" class="helicopter2 vehicle" src="assets/teddy/helicopter2.png" ondblclick="transform('teddy','helicopter2')">
+		<img id="draggable" class="helicopter vehicle" src="assets/kay/helicopter.png" ondblclick="transform('kay','helicopter')">
+		<img id="draggable" class="police-car vehicle" src="assets/teddy/police-car.png" ondblclick="transform('teddy','police-car')">
+		<img id="draggable" class="building" src="assets/teddy/police-station.png">
 
+		<!-- 11-26-2020 -->
+		<img id="draggable" class="orange avatar" src="assets/kay/baby-ranger/orange.png" ondblclick="transform('kay/baby-ranger','orange')">
+		<img id="draggable" class="pink avatar" src="assets/kay/baby-ranger/pink.png" ondblclick="transform('kay/baby-ranger','pink')">
+		<img id="draggable" class="yellow avatar" src="assets/kay/baby-ranger/yellow.png" ondblclick="transform('kay/baby-ranger','yellow')">
+		<img id="draggable" class="purple avatar" src="assets/kay/baby-ranger/purple.png" ondblclick="transform('kay/baby-ranger','purple')">
+		<img id="draggable" class="blue avatar" src="assets/kay/baby-ranger/blue.png" ondblclick="transform('kay/baby-ranger','blue')">
+		<img id="draggable" class="green avatar" src="assets/kay/baby-ranger/green.png" ondblclick="transform('kay/baby-ranger','green')">
+		<img id="draggable" class="red avatar" src="assets/kay/baby-ranger/red.png" ondblclick="transform('kay/baby-ranger','red')">
 
-
+		<img id="draggable" class="building" src="assets/kay/playground.png">
 
 		<div id="emergencyCover">
 		</div>
 		<img id="emergencyButton" ondblclick="emergencyOn()"class="vehicle" src="assets/kay/emergency-button.png">
 		<img id="turnButton" onclick="turnSwitch()"class="vehicle" src="assets/icons/default.png">
+
 </body>
 <script type="text/javascript" src="scripts/draggable.js"></script>
 <script type="text/javascript" src="scripts/toggle.js"></script>

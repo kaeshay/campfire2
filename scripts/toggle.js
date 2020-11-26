@@ -129,13 +129,13 @@ function nightTime(){
 	}
 }
 var green1Counter=0;
-function turnGreen(){
-	element=document.getElementsByClassName("hypnotic-monster2")[0];
+function turnGreen(nameString, idString){
+	element=document.getElementsByClassName(idString)[0];
 	if(green1Counter==0){
-		element.src="assets/rui/hypnotic-monster2.png";
+		element.src="assets/"+nameString+"/"+idString+".png";
 		green1Counter++;
 	} else if(green1Counter==1){
-		element.src="assets/rui/hypnotic-monster2-green.png";
+		element.src="assets/"+nameString+"/"+idString+"-green.png";
 		green1Counter=0;
 	}
 }
@@ -169,5 +169,69 @@ function turnSwitch(){
 	} else if(turnCounter==4){
 		element.src="assets/icons/default.png";
 		turnCounter=0;
+	}
+}
+
+var autobotCounter=0;
+function mrFiretruck(){
+	element=document.getElementsByClassName('firetruck')[0];
+	if(autobotCounter==0){
+		element.src="assets/kay/firetruck.png";
+		autobotCounter++;
+	} else if(autobotCounter==1){
+		element.src="assets/kay/mr-firetruck.png";
+		autobotCounter=0;
+	}
+}
+
+var closetCounter=0;
+function openCloset(){
+	element=document.getElementById('closet');
+	clothes=document.getElementById('clothes');
+	if(closetCounter==0){
+		clothes.style.display='block';
+		element.src="assets/kay/closet/closet2.png";
+		element.style.width="400px";
+		closetCounter++;
+	} else if(closetCounter==1){
+		clothes.style.display='none';
+		element.src="assets/kay/closet/closet1.png";
+		element.style.width="300px";
+		closetCounter=0;
+	}
+}
+
+function shrinkRanger(){
+	element=document.getElementsByClassName('big-ranger')[0];
+	var currWidth = element.clientWidth;
+	  if(currWidth == 10){
+	        alert("min zoom-in level reached.");
+	    } else{
+	        element.style.width = (currWidth - 50) + "px";
+	    } 
+	element.style.width-=10;
+}
+
+var rocketCounter=0;
+function rocketLaunch(){
+	element=document.getElementsByClassName('kayRocket')[0];
+	if(rocketCounter==0){
+		element.src="assets/kay/rocket-on.png";
+		rocketCounter++;
+	} else if(rocketCounter==1){
+		element.src="assets/kay/rocket.png";
+		rocketCounter=0;
+	}
+}
+
+var transformCounter=0;
+function transform(makerString, classString){
+	element=document.getElementsByClassName(classString)[0];
+	if(transformCounter==0){
+		element.src="assets/"+makerString+"/"+classString+"-on.png";
+		transformCounter++;
+	} else if(transformCounter==1){
+		element.src="assets/"+makerString+"/"+classString+".png";
+		transformCounter=0;
 	}
 }
