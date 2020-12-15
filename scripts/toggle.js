@@ -167,6 +167,9 @@ function turnSwitch(){
 		element.src="assets/icons/aristotle.png";
 		turnCounter++;
 	} else if(turnCounter==4){
+		element.src="assets/icons/amali.png";
+		turnCounter++;
+	} else if(turnCounter==5){
 		element.src="assets/icons/default.png";
 		turnCounter=0;
 	}
@@ -234,4 +237,86 @@ function transform(makerString, classString){
 		element.src="assets/"+makerString+"/"+classString+".png";
 		transformCounter=0;
 	}
+}
+
+var mechaCounter=0;
+function mechaRanger(classString, idString){
+	ranger=document.getElementsByClassName(classString)[0];
+	mecha=document.getElementById(idString);
+	if(mechaCounter==0){
+		ranger.style.display='none';
+		mecha.style.display='block';
+		mechaCounter++;
+	} else if(mechaCounter==1){
+		ranger.style.display='block';
+		mecha.style.display='none';
+		mechaCounter=0;
+	}
+}
+var pondCounter=0;
+function shufflePond(){
+	var myNumbers = [1,2,3,4,5,6,7,8,9,10];
+	var numberPond=document.getElementById("numberPond");
+	shuffle(myNumbers);
+	console.log(myNumbers[0]);
+	numberPond.src="assets/kay/numbers/"+myNumbers[0]+".png";
+	numberPond.style.display='block';
+
+}
+function hidePond(){
+	document.getElementById("numberPond").style.display='none';
+}
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+var slideCounter=0;
+function storySlideShow(){
+	element=document.getElementById("storySlide");
+	if(slideCounter==0){
+		element.style.display="block";
+		slideCounter++;
+	} else if(slideCounter==1){
+		element.style.display="none";
+		slideCounter=0;
+	}
+}
+
+var showCounter=0;
+function show(classString){
+element=document.getElementsByClassName(classString)[0];
+if(showCounter==0){
+	element.style.display='block';
+	showCounter++
+}else if(showCounter==1){
+	element.style.display='none';
+	showCounter=0;
+}
+}
+
+var hideCounter=0;
+function hide(classString){
+element=document.getElementsByClassName(classString)[0];
+if(hideCounter==0){
+	element.style.display='none';
+	hideCounter++
+}else if(hideCounter==1){
+	element.style.display='block';
+	hideCounter=0;
+}
 }
